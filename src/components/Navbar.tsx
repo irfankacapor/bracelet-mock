@@ -1,6 +1,7 @@
 import { AppBar, Box, Link, Paper } from "@mui/material";
 import PageSectionContainer from "../styles/PageSectionContainer";
 import { useEffect, useState } from "react";
+import { colors } from "../utils/colors";
 
 const Navbar = () => {
   const [elevation, setElevation] = useState(0);
@@ -51,7 +52,7 @@ const Navbar = () => {
               <Link
                 href="/"
                 underline="none"
-                color={elevation === 0 ? "rgb(51, 111, 251)" : "white"}
+                color={elevation === 0 ? colors.blue : "white"}
               >
                 Dashboard
               </Link>
